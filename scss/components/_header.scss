@@ -1,29 +1,97 @@
-.site-list{
-    color: $title-text-color;
-font-family: 'Roboto';
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.28px;
-list-style: none;
-display: flex;
-
-&__list-item{
-
-    margin-bottom:34px ;
-    margin-top:34px ;
-
-    &__site-link{
-
-        text-decoration: none;
-        color: $title-text-color;
-        position: relative;
-        &:hover,
-        &:focus{
-        color: $title-text-color;
-    }
-    }
+header{
+    background: $primary-background-color;               
 }
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
- 
+.header-mail,
+    .header-number{
+    color: $primary-text-color;
+    }
+    .header-number:hover,
+    .header-mail:hover,
+    .header-number:focus{
+        color: $background-button-color;
+    }
+    .contacts-item .header-number{
+        transition: color 250ms $time-function;
+    }
+    .header-number .icon-phone{
+        transition: fill 250ms $time-function;
+    }
+    .header-number .icon-envelope{
+        transition: fill 250ms $time-function;
+    }
+    .contacts-list .header-number:hover{
+        color: $background-button-color;
+    }
+    .header-number:hover .icon-phone{
+        fill: $background-button-color;
+        transition: color 250ms $time-function;
+    }
+    .header-number:hover .icon-envelope{
+        fill: $background-button-color;
+        transition: color 250ms $time-function;
+    }
+    .icon-phone{
+        margin-left: 10px;
+    }
+    .header-list-item{
+        margin-bottom:34px ;
+        margin-top:34px ;
+    }
+    header{
+        border-bottom: 1px solid $primary-text-color;
+    }
+    .contacts-list{
+        padding-left: 344px;
+        display: flex;
+    }
+    .header-mail{
+    margin-right: 50px ;
+    color: $primary-text-color;
+    }
+    .header-number{
+    margin: 0px;
+    }
+    .header-mail:hover,
+    .header-mail:focus{
+        color: $background-button-color;
+    }
+    .contacts{
+        color: $title-text-color;
+        
+    }
+    .contacts:hover{
+        color: $background-button-color;
+    }
+    .ctudiya{
+        color: $title-text-color;
+       
+    }
+    .ctudiya:hover{
+        color: $background-button-color;
+    }
+    .portfolio{
+        color: $title-text-color;
+        
+    }
+    .portfolio:hover{
+        color: $background-button-color;
+    }
+    .header-list-item:not(:last-child){
+        margin-right: 50px;
+    }
+    .site-list{
+        color: $title-text-color;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    list-style: none;
+    display: flex;
+    }
