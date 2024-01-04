@@ -1,2 +1,29 @@
- 
+.site-list{
+    color: $title-text-color;
+font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.28px;
+list-style: none;
+display: flex;
+
+&__list-item{
+
+    margin-bottom:34px ;
+    margin-top:34px ;
+
+    &__site-link{
+
+        text-decoration: none;
+        color: $title-text-color;
+        position: relative;
+        &:hover,
+        &:focus{
+        color: $title-text-color;
+    }
+    }
+}
+}
  
