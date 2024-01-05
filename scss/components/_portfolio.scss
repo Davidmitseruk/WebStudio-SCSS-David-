@@ -1,0 +1,83 @@
+.port-div{
+    margin-top: 94px;
+    margin-bottom:50px ;
+    display: flex;
+    justify-content: center;
+}
+.port-class{
+    background-color: $primary-background-color;
+    width: 370px;
+    height: 404px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:hover{
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+}
+.port-img{
+    width:370px ;
+}
+.port-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    
+}
+.port-name{
+   margin-top: 20px ;
+    margin-left: 24px;
+    margin-bottom: 13px;
+}
+.port-info{
+    margin-left: 24px;
+}
+.port-button{
+    background-color: $port-button-color;
+    cursor: pointer;
+    border: none; 
+    border-radius: 4px;
+    background: #F5F4FA;
+    margin-right: 8px;
+    padding: 6px 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.port-button:hover{
+    background-color: $background-button-color;
+    color: $primary-background-color;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
+}
+.port-class{
+    background-color: $primary-background-color;
+    border: 1px solid $port-button-color;
+}
+.port-info{
+    color: $primary-text-color;
+}
+.port-name{
+    color: $title-text-color;
+}
+.block-link:hover .overlay{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.block-wrap{
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    background-color: rgba(33, 150, 243, 0.90);
+    font-family: 'Roboto', sans-serif;
+    color: $secondary-text-color;
+    transform: translateY(100%);
+    transition: transform 250ms linear, opacity 250ms linear;
+    opacity: 0;
+}
