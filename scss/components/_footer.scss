@@ -1,6 +1,4 @@
-.fmc{
-    margin-left:350px ;
-}
+
 .logo{
     font-size: 26px;
 font-style: normal;
@@ -145,4 +143,11 @@ footer{
     }
     .footer-svag-paperplane{
         margin-left: 10px;
+    }
+    .team-img-lis{ 
+        display: flex;
+        justify-content: space-between;
+    }
+    .team-img-list-ite{
+        margin-right: 10px;
     }

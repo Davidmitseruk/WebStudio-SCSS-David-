@@ -6,6 +6,15 @@
 }
 .always__last-section-item{
     margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $icon-fill;
+    border-radius: 4px;
+    &:hover,
+    &:focus{
+        border: 1px solid $background-button-color;
+    }
 }
 .always__last-section-div{
     width: 170px;
@@ -16,24 +25,25 @@
     box-sizing: border-box; 
 }
 .always__last-section-svg{
-    width: 170px;
-    height: 92px;
+    width: 106px;
+    height: 60px;
     border: 1px solid $icon-fill;
     border-radius: 4px;
     fill: $icon-fill;  
     transition: border-color 250ms var(--time-function), fill 250ms var(--time-function);
+    &:hover,
+    &:focus{
+        fill: $background-button-color;
+    }
 }
-.always__last-section-svg:hover,
-.always__last-section-svg:focus{
-    fill: $background-button-color;
-    border: 1px solid $background-button-color;
-}
+
 .always__svg-hover-img-size{
     margin-top: 60px;
 }
 .always-clients{
-    height: 372px;
+    padding-top: 94px;
     background-color: $primary-background-color;
+
 }
 .always__title{
     text-align: center;
