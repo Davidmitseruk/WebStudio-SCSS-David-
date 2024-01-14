@@ -1298,54 +1298,160 @@ header{
   background-image: url(../../img/before-imgs/astronaut\ 1.png);
 }
 
-.activity__div {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .benefits__pictures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .benefits {
+    margin-bottom: 118px;
+  }
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .benefits__block::before {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    display: block;
+    background-image: url(../../img/before-imgs/Vector.png);
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+  .benefits__block:nth-child(2):before {
+    background-image: url(../../img/before-imgs/clock\ 1.png);
+  }
+  .benefits__block:nth-child(3):before {
+    background-image: url(../../img/before-imgs/diagram\ 1.png);
+  }
+  .benefits__block:nth-child(4):before {
+    background-image: url(../../img/before-imgs/astronaut\ 1.png);
+  }
+  .benefits__block:not(:last-child) {
+    margin-right: 30px;
+  }
+  .benefits__name {
+    color: #212121;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+  }
+  .benefits__text {
+    color: #757575;
+    font-size: 14px;
+    font-family: Roboto;
+    letter-spacing: 0.42px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+/*.activity__div{
+    position: relative;
+}
+.activity__div > .activity__name{
+    position: absolute; 
+    bottom: 0;
+    left: 0;
 }
 
-.activity__div > .activity__name {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.activity__name{
+    color: $primary-background-color;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+    padding: 27px 107px;
+    width: 100%;
 }
 
-.activity__name {
-  color: #fff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  background: rgba(47, 48, 58, 0.8);
-  padding: 27px 107px;
-  width: 100%;
-}
 
-.activity__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.activity__list{
+    display: flex;
+    justify-content: space-between;
 }
-
+.activity{
+    background-color: $primary-background-color;
+}
+.activity__title{
+    color: $title-text-color;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}*/
 .activity {
-  background-color: #fff;
+  display: none;
 }
 
-.activity__title {
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
+@media screen and (min-width: 1200px) {
+  .activity__div {
+    position: relative;
+    margin-right: 30px;
+  }
+  .activity__div > .activity__name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .activity__name {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px 107px;
+    width: 100%;
+  }
+  .activity__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .activity {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .activity__title {
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
 }
-
 .title {
   color: var(--title-text-color);
   text-align: center;
