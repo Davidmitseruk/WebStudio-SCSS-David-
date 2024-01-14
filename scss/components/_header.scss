@@ -1,3 +1,4 @@
+/*
 header{
     background: $primary-background-color;               
 }
@@ -145,4 +146,314 @@ header{
     .site-list__site-link:hover.current::after{
         background-color: $background-color-after;
         transition: background-color 2000ms ease;
+    }*/
+    
+        .site-nav,
+        .header__contacts-list{
+            display: none;
+           
+        }
+        .header__web{
+            color: $background-button-color;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            letter-spacing: 0.78px;
+        }
+        .header__studio{
+            color: $logo-color;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            letter-spacing: 0.78px;
+        }
+        .header__logo{
+            margin-right: 331px;
+            margin-left: 15px;
+            margin: 0px;
+        }
+        
+
+
+
+
+
+        @media screen and (min-width: 768px){
+            .site-nav{
+            display: flex;
+           
+        }
+        .header__logo{
+            margin-right: 331px;
+            margin-left: 15px;
+            margin: 0px;
+        }
+        .header__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header__mail,
+            .header__number{
+            color: $primary-text-color;
+            &:hover,
+            &:focus{
+                color: $background-button-color;
+            }
+            }
+           
+            .header__contacts-item .header__header-number{
+                transition: color 250ms $time-function;
+            }
+            .header__header-number .header__icon-phone{
+                transition: fill 250ms $time-function;
+            }
+            .header__icon-envelope,
+            .header__icon-phone{
+                fill: $primary-text-color;
+            }
+            .header__header-number .header__icon-envelope{
+                transition: fill 250ms $time-function;
+            }
+            .header__contacts-list .header__header-number:hover{
+                color: $background-button-color;
+            }
+            .header__header-number:hover .header__icon-phone{
+                fill: $background-button-color;
+                transition: color 250ms $time-function;
+            }
+            .header__header-number:hover .header__icon-envelope{
+                fill: $background-button-color;
+                transition: color 250ms $time-function;
+            }
+            .header__icon-phone{
+                margin-left: 10px;
+            }
+            .site-list__list-item{
+                margin-bottom:34px ;
+                margin-top:34px ;
+            }
+            header{
+                border-bottom: 1px solid $primary-text-color;
+            }
+            .header__contacts-list{
+                display: block;
+                align-items: start;
+            }
+            .mail{
+            margin-right: 50px ;
+            color: $primary-text-color;
+            }
+            .header__header-number{
+             margin: 0px;
+             color: $primary-text-color;
+             font-weight: 400;
+             line-height: 170%;
+             letter-spacing: 0.42px;
+            }
+            .mail:hover,
+            .mail:focus{
+                color: $background-button-color;
+            }
+            .contacts{
+                color: $title-text-color;
+                
+            }
+            .contacts:hover{
+                color: $background-button-color;
+            }
+            .ctudiya{
+                color: $title-text-color;
+               
+            }
+            .ctudiya:hover{
+                color: $background-button-color;
+            }
+            .portfolio{
+                color: $title-text-color;
+                
+            }
+            .portfolio:hover{
+                color: $background-button-color;
+            }
+            .header-list-item:not(:last-child){
+                margin-right: 50px;
+            }
+            .site-list{
+                color: $title-text-color;
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.28px;
+                list-style: none;
+                display: flex;
+            }
+            .site-list__site-link{
+                text-decoration: none;
+                color: $title-text-color;
+                position: relative;
+                margin-right: 50px;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.28px;
+                &:hover,
+                &:focus{
+                    color: $background-button-color;
+                }
+            }
+          }
+          @media screen and (min-width: 1200px){
+            header{
+                background: $primary-background-color;               
+            }
+            .header__wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .header__mail,
+                .header__number{
+                color: $primary-text-color;
+                &:hover,
+                &:focus{
+                    color: $background-button-color;
+                }
+                }
+               
+                .header__contacts-item .header__header-number{
+                    transition: color 250ms $time-function;
+                }
+                .header__header-number .header__icon-phone{
+                    transition: fill 250ms $time-function;
+                }
+                .header__icon-envelope,
+                .header__icon-phone{
+                    fill: $primary-text-color;
+                }
+                .header__header-number .header__icon-envelope{
+                    transition: fill 250ms $time-function;
+                }
+                .header__contacts-list .header__header-number:hover{
+                    color: $background-button-color;
+                }
+                .header__header-number:hover .header__icon-phone{
+                    fill: $background-button-color;
+                    transition: color 250ms $time-function;
+                }
+                .header__header-number:hover .header__icon-envelope{
+                    fill: $background-button-color;
+                    transition: color 250ms $time-function;
+                }
+                .header__icon-phone{
+                    margin-left: 10px;
+                }
+                .site-list__list-item{
+                    margin-bottom:34px ;
+                    margin-top:34px ;
+                }
+                header{
+                    border-bottom: 1px solid $primary-text-color;
+                }
+                .header__contacts-list{
+                    display: flex;
+                }
+                .mail{
+                margin-right: 50px ;
+                color: $primary-text-color;
+                }
+                .header__header-number{
+                 margin: 0px;
+                 color: $primary-text-color;
+                 font-weight: 400;
+                 line-height: 170%;
+                 letter-spacing: 0.42px;
+                }
+                .mail:hover,
+                .mail:focus{
+                    color: $background-button-color;
+                }
+                .contacts{
+                    color: $title-text-color;
+                    
+                }
+                .contacts:hover{
+                    color: $background-button-color;
+                }
+                .ctudiya{
+                    color: $title-text-color;
+                   
+                }
+                .ctudiya:hover{
+                    color: $background-button-color;
+                }
+                .portfolio{
+                    color: $title-text-color;
+                    
+                }
+                .portfolio:hover{
+                    color: $background-button-color;
+                }
+                .header-list-item:not(:last-child){
+                    margin-right: 50px;
+                }
+                .site-list{
+                    color: $title-text-color;
+                    font-family: 'Roboto';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.28px;
+                    list-style: none;
+                    display: flex;
+                }
+                .site-list__site-link{
+                    text-decoration: none;
+                    color: $title-text-color;
+                    position: relative;
+                    margin-right: 50px;
+                    &:hover,
+                    &:focus{
+                        color: $background-button-color;
+                    }
+                }
+            
+                .header__web{
+                    color: $background-button-color;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 700;
+                    font-size: 26px;
+                    letter-spacing: 0.78px;
+                }
+                .header__studio{
+                    color: $logo-color;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 700;
+                    font-size: 26px;
+                    letter-spacing: 0.78px;
+                }
+                .header__logo{
+                    margin-right: 93px;
+                }
+                .site-list__site-link.current::after{
+                    content: "";
+                    display: block;
+                    background-color: $background-button-color;
+                    height: 4px;
+                    width: 100%;
+                    border-radius: 2px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -33px;
+                    transition: background-color 2000ms ease;
+                }
+                .site-list__site-link:hover.current::after{
+                    background-color: $background-color-after;
+                    transition: background-color 2000ms ease;
+                }
     }
+    
