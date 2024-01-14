@@ -147,7 +147,11 @@ header{
         background-color: $background-color-after;
         transition: background-color 2000ms ease;
     }*/
-    
+        .header{
+            padding-left: 15px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
         .site-nav,
         .header__contacts-list{
             display: none;
