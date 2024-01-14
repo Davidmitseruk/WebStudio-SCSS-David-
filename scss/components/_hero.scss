@@ -47,6 +47,7 @@
     }
 }*/
 .post{
+  min-width: 480px;
   max-width: 767px;
   height: 400px;
   flex-shrink: 0;
@@ -66,6 +67,7 @@
   line-height: 42px; /* 161.538% */
   letter-spacing: 1.56px;
   text-transform: uppercase;
+
 }
 .post__button{
   color: $primary-background-color ;
@@ -88,4 +90,10 @@
   &:focus{
       background-color:#247dc5;
   }
+  }
+  @media screen and (min-width: 768px){
+    .post{
+      min-width: 767px;
+      max-width: 1200px;
+    }
   }
