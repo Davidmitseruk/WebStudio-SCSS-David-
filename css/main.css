@@ -1911,7 +1911,6 @@ header{
 
 .always__title {
   text-align: center;
-  margin-top: 94px;
   color: #212121;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -2000,7 +1999,6 @@ footer {
 }
 
 .lol {
-  margin-left: -900px;
   margin-top: 20px;
 }
 
@@ -2049,7 +2047,6 @@ footer {
 
 .final-email {
   margin-top: 22px;
-  margin-left: 93px;
 }
 
 .send-email-title {
@@ -2165,50 +2162,103 @@ footer {
   margin-right: 10px;
 }
 
+/*
+
+.port-div{
+    margin-top: 94px;
+    margin-bottom:50px ;
+    display: flex;
+    justify-content: center;
+}
+.port-class{
+    background-color: $primary-background-color;
+    width: 370px;
+    height: 404px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:hover{
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+}
+.port-img{
+    width:370px ;
+}
+.port-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+
+}
+.port-name{
+   margin-top: 20px ;
+    margin-left: 24px;
+    margin-bottom: 13px;
+}
+.port-info{
+    margin-left: 24px;
+}
+.port-button{
+    background-color: $port-button-color;
+    cursor: pointer;
+    border: none; 
+    border-radius: 4px;
+    background: #F5F4FA;
+    margin-right: 8px;
+    padding: 6px 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.port-button:hover{
+    background-color: $background-button-color;
+    color: $primary-background-color;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
+}
+.port-class{
+    background-color: $primary-background-color;
+    border: 1px solid $port-button-color;
+}
+.port-info{
+    color: $primary-text-color;
+}
+.port-name{
+    color: $title-text-color;
+}
+.block-link:hover .overlay{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.block-wrap{
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    background-color: rgba(33, 150, 243, 0.90);
+    font-family: 'Roboto', sans-serif;
+    color: $secondary-text-color;
+    transform: translateY(100%);
+    transition: transform 250ms linear, opacity 250ms linear;
+    opacity: 0;
+}*/
 .port-div {
-  margin-top: 94px;
-  margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.port-class {
-  background-color: #fff;
-  width: 370px;
-  height: 404px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-.port-class:hover {
-  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.port-img {
-  width: 370px;
-}
-
-.port-section {
+  margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: -30px;
 }
 
-.port-name {
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-bottom: 13px;
-}
-
-.port-info {
-  margin-left: 24px;
+.portfolio-one {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .port-button {
@@ -2216,13 +2266,15 @@ footer {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  background: #F5F4FA;
+  background: #f5f4fa;
   margin-right: 8px;
-  padding: 6px 25px;
+  padding: 6px 22px;
   font-size: 16px;
   font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.48px;
+  margin-bottom: 15px;
 }
-
 .port-button:hover {
   background-color: #2196f3;
   color: #fff;
@@ -2232,33 +2284,48 @@ footer {
 
 .port-class {
   background-color: #fff;
-  border: 1px solid #EEEEEE;
+  max-width: 450px;
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+}
+.port-class:hover {
+  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.port-info {
-  color: #757575;
-}
-
-.port-name {
-  color: #212121;
-}
-
+.block-link:focus .overlay,
 .block-link:hover .overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   opacity: 1;
 }
 
-.block-wrap {
-  position: relative;
-  overflow: hidden;
+.port-name {
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-bottom: 13px;
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1.08px;
+}
+
+.port-info {
+  margin-left: 24px;
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+  margin-bottom: 20px;
 }
 
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-size: 18px;
   letter-spacing: 0.03em;
   line-height: 1.6;
@@ -2272,4 +2339,38 @@ footer {
   transition: transform 250ms linear, opacity 250ms linear;
   transition: transform 250ms linear, opacity 250ms linear, -webkit-transform 250ms linear;
   opacity: 0;
+  width: 100%;
+}
+
+.block-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.port-img {
+  width: 100%;
+  height: 294px;
+}
+
+@media screen and (min-width: 767px) {
+  .port-div {
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .port-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .port-class {
+    width: 339px;
+  }
 }/*# sourceMappingURL=main.css.map */
