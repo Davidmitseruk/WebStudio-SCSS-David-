@@ -54,14 +54,12 @@ footer{
     text-transform: uppercase;
     }
     .card-lin{
+        @include flex;
         width: 44px;
         height: 44px;
         border-radius: 50%;
         fill: $primary-background-color ;
         background-color: rgba(255, 255, 255, 0.10);
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-right: 10px;
         margin-top: 20px;
         transition: background-color 250ms $time-function, fill 250ms $time-function;
@@ -119,6 +117,7 @@ footer{
         letter-spacing: 0.48px;
     }
     .send-email-button{
+        @include flex;
         width: 200px;
         height: 50px;
         flex-shrink: 0;
@@ -133,9 +132,6 @@ footer{
         font-weight: 700;
         line-height: 30px;
         letter-spacing: 0.96px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         border: none;
         transition: background-color 250ms $time-function;
     }

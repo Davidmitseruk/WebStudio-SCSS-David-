@@ -63,10 +63,8 @@
     margin-bottom: 30px;
 }
 .always__last-section-item{
+    @include flex;
     margin-left: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 1px solid $icon-fill;
     border-radius: 4px;
     &:hover,
@@ -75,11 +73,9 @@
     }
 }
 .always__last-section-div{
+    @include flex;
     width: 170px;
-    height: 92px;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
+    height: 92px;   
 }
 .always__last-section-svg{
     width: 106px;
@@ -120,10 +116,8 @@
         margin-left: -30px;
     }
     .always__last-section-item{
+        @include flex;
         margin-left: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border: 1px solid $icon-fill;
         border-radius: 4px;
         &:hover,

@@ -158,13 +158,11 @@
     margin-right: 122px;
 }
 .team__card-link{
+    @include flex;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     fill: $icon-fill ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: background-color 250ms $time-function, fill 250ms $time-function;
     &:hover{
         background-color: #2196f3;

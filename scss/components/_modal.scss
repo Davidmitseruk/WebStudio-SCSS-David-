@@ -293,6 +293,7 @@
 }
 
 .modal__close-button{
+    @include flex;
     width: 30px;
     height: 30px;
     background-color: $primary-background-color;
@@ -301,13 +302,9 @@
     cursor: pointer;
     margin-top: 8px;
     margin-left: 490px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-right: 8px;
     margin-top: 8px;
 }
