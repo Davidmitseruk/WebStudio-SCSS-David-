@@ -176,16 +176,56 @@ header{
             margin-left: 15px;
             margin: 0px;
         }
-        
-
-
-
+        input[type="checkbox"], label{
+            display: none;
+        }
+        .burger-label{
+            display: block;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            margin-left: auto;
+        }
+        .burger-label:hover{
+            cursor: pointer;
+        }
+       label span{
+            top: 15px;
+        }
+        label span,
+        label span::before,
+        label span::after{
+            content: '';
+            display: block;
+            width: 35px;
+            height: 3px;
+            background-color: black;
+            position: absolute;
+            right: 0;
+            transition: .3s;
+        }
+        label span::before{
+            top: -10px;
+        }
+        label span::after{
+            top: 10px;
+        }
+        .nav-menu{
+            display: none;
+        }
+        input[type="checkbox"]:checked ~ .nav-menu{
+            display: flex;
+            flex-direction: column;
+        }
 
 
         @media screen and (min-width: 768px){
             .site-nav{
             display: flex;
            
+        }
+        .burger-input{
+            display: none;
         }
         .header__logo{
             margin-right: 331px;
