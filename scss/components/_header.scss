@@ -172,9 +172,8 @@ header{
             letter-spacing: 0.78px;
         }
         .header__logo{
-            margin-right: 331px;
-            margin-left: 15px;
-            margin: 0px;
+            margin-top: 100px;
+            
         }
         input[type="checkbox"], label{
             display: none;
@@ -189,9 +188,7 @@ header{
         .burger-label:hover{
             cursor: pointer;
         }
-       label span{
-            top: 15px;
-        }
+       
         label span,
         label span::before,
         label span::after{
@@ -217,20 +214,34 @@ header{
             display: flex;
             flex-direction: column;
         }
-
+        input[type="checkbox"]:checked ~ label span::before{
+            top: 0;
+            transform: rotate(0);
+        }
+        input[type="checkbox"]:checked ~ label span::after{
+            top: 0;
+            transform: rotate(90deg);
+        }
+        input[type="checkbox"]:checked ~ label span{
+            transform: rotate(-45deg);
+        }
+        .nav-menu{
+            position: absolute;
+        }
+        .burger-input{
+           margin-left: 500px;
+        }
 
         @media screen and (min-width: 768px){
             .site-nav{
             display: flex;
-           
+            order: 1;
         }
         .burger-input{
             display: none;
         }
         .header__logo{
-            margin-right: 331px;
-            margin-left: 15px;
-            margin: 0px;
+            align-items: center;
         }
         .header__wrapper{
             display: flex;
