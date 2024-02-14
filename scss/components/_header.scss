@@ -172,26 +172,13 @@ header{
             letter-spacing: 0.78px;
         }
         .header__logo{
-            margin:0;
-            
+            margin:0;   
         }
-        input[type="checkbox"], label{
-            display: none;
-        }
-        .burger-label{
-            display: block;
-            width: 40px;
-            height: 40px;
-            position: relative;
-            margin-left: auto;
-        }
-        .burger-label:hover{
-            cursor: pointer;
-        }
+        
        
-        label span,
-        label span::before,
-        label span::after{
+        .burger-button,
+        .burger-button::before,
+        .burger-button::after{
             content: '';
             display: block;
             width: 35px;
@@ -207,13 +194,7 @@ header{
         label span::after{
             top: 10px;
         }
-        .nav-menu{
-            display: none;
-        }
-        input[type="checkbox"]:checked ~ .nav-menu{
-            display: flex;
-            flex-direction: column;
-        }
+        
        
         .nav-menu{
             position: absolute;
@@ -232,7 +213,9 @@ header{
         @media screen and (min-width: 768px){
             .site-nav{
             display: flex;
-            order: 1;
+        }
+        .burger-button{
+            display: none;
         }
         .burger-input{
             display: none;
