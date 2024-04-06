@@ -102,7 +102,22 @@
   .benefits__block:nth-child(4):before { 
     background-image: url(../../img/before-imgs/astronaut\ 1.png); 
   } 
-   
+  @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+  .benefits__block::before{
+    background-image: url(../../img/before-imgs/vector-2x.png);
+  }
+  .benefits__block:nth-child(2):before { 
+    background-image: url(../../img/before-imgs/clock\ 1-2x.png); 
+  } 
+  .benefits__block:nth-child(3):before { 
+    background-image: url(../../img/before-imgs/diagram\ 1-2x.png); 
+  }
+  .benefits__block:nth-child(4):before { 
+    background-image: url(../../img/before-imgs/astronaut\ 1-2x.png); 
+  }
+}
   @media screen and (min-width: 767px) { 
     .benefits__list { 
       display: flex; 
