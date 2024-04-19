@@ -1898,7 +1898,29 @@ header{
   background-color: #F5F4FA;
 }
 
+.activity__things-desktop {
+  display: none;
+}
+
+.activity__things-tablet {
+  display: none;
+}
+
+.activity__things-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (min-width: 767px) {
+  .activity__things-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .activity__things-desktop {
+    display: none;
+  }
   .ipad-team {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1920,6 +1942,14 @@ header{
   }
 }
 @media screen and (min-width: 1200px) {
+  .activity__things-tablet {
+    display: none;
+  }
+  .activity__things-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
